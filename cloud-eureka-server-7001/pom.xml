@@ -9,20 +9,19 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-customer-order-80</artifactId>
-    <description>微服务订单消费者模块</description>
+    <artifactId>cloud-eureka-server-7001</artifactId>
+    <description>Eureka服务注册中心Server1</description>
 
     <dependencies>
-        <!-- depend common api module -->
         <dependency>
             <groupId>xyz.ariesfish.springcloud</groupId>
             <artifactId>cloud-api-common</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <!--eureka client-->
+        <!-- Eureka Server-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -49,4 +48,5 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
+
 </project>
